@@ -24,8 +24,8 @@ public class Passagem {
     private Date dataSaida;
     private String horaSaida;
 
-    @ManyToOne(cascade = CascadeType.ALL )
-    private ViagemDTO viagem;
+    /*@ManyToOne(cascade = CascadeType.ALL )
+    private ViagemDTO viagem;*/
 
     @ManyToOne(cascade = CascadeType.MERGE)
     @JoinColumn(name = "cidadeOrigem_id")
@@ -54,14 +54,14 @@ public class Passagem {
     public Passagem() {
 
     }
-    public ViagemDTO getViagem() {
+   /* public ViagemDTO getViagem() {
         return viagem;
-    }
+    }*/
 
 
-    public void setViagem(ViagemDTO viagem) {
+   /* public void setViagem(ViagemDTO viagem) {
         this.viagem = viagem;
-    }
+    }*/
 
     public int getIdPassagem() {
         return idPassagem;

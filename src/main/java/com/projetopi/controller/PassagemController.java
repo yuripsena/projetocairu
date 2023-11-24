@@ -117,7 +117,7 @@ public class PassagemController {
         return "faturamento";
     }
 
-    @GetMapping("/faturamento")
+    /*@GetMapping("/faturamento")
     public ModelAndView listarFaturamento(@RequestParam("dataInicio")String dataInicio, @RequestParam("dataFim")String dataFim){
         try {
 
@@ -143,6 +143,6 @@ public class PassagemController {
             e.printStackTrace();
         }
         return null;
-    }
+    }*/
 
 }
