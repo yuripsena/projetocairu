@@ -1,19 +1,25 @@
+<!--
 <!DOCTYPE html>
-<html>
+<html  xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
 </head>
 <body>
 <h1>Login</h1>
-<form action="/login" method="post">
+<form action="/login/save" method="post">
     <label for="login">Nome de Usuário:</label>
-    <input type="text" id="login" name="username" required>
+    <input path="email" size="20" />
     <br>
     <label for="senha">Senha:</label>
-    <input type="password" id="senha" name="password" required>
+&lt;!&ndash;    <input type="password"  th:field="*{senha}" name="password" required>&ndash;&gt;
     <br>
     <button type="submit">Entrar</button>
 </form>
+&lt;!&ndash;<form method="post" action="/formAction">
+    <input path="path1" />
+    <input path="path2" />
+    <input type="submit" value="Submit"/>
+</form>&ndash;&gt;
 </body>
-</html>
+</html>-->
